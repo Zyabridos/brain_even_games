@@ -22,5 +22,9 @@
   "homepage": "https://github.com/Zyabridos/fullstack-javascript-project-44#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-plugin-import": "^2.28.1"
   }
 }

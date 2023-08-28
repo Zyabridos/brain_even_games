@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync';
 import isEven from '../games/evenCheck.js';
 import compareCalculation from '../games/calcCheck.js';
+import findGCD from '../games/gcdCheck.js';
 // первый и третий ответы проходят тест, но если во втором
 // вопросе ответить неверно, то все равно выводится третий
 function evenGame() {
@@ -34,4 +35,19 @@ function calcGame() {
   }
 }
 
-export default calcGame;
+function gcdGame() {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log('Find the greatest common divisor of given numbers.');
+  if (findGCD() === true) {
+    console.log('Correct!');
+    if (findGCD() === true) {
+      console.log('Correct!');
+    } if (findGCD() === true) {
+      console.log(`Congratulations, ${userName}!`);
+    }
+  }
+}
+
+export { evenGame, calcGame, gcdGame };

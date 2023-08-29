@@ -4,7 +4,6 @@ import calc from '../games/calcCheck.js';
 import findGCD from '../games/gcdCheck.js';
 import isPrime from '../games/primeCheck.js';
 import isProgressionCorrect from '../games/progressionCheck.js';
-import createProgression from './createProgression.js';
 
 function evenGame() {
   console.log('Welcome to the Brain Games!');
@@ -18,9 +17,9 @@ function evenGame() {
       console.log('Correct!');
       if (isEven() === true) {
         console.log(`Congratulations, ${userName}!`);
-      }
-    }
-  } console.log(`Let's try again, ${userName}!`);
+      } else console.log(`Let's try again, ${userName}!`);
+    } else console.log(`Let's try again, ${userName}!`);
+  } else console.log(`Let's try again, ${userName}!`);
 }
 
 function calcGame() {
@@ -34,9 +33,9 @@ function calcGame() {
       console.log('Correct!');
       if (calc() === true) {
         console.log(`Congratulations, ${userName}!`);
-      }
-    }
-  } console.log(`Let's try again, ${userName}!`);
+      } else console.log(`Let's try again, ${userName}!`);
+    } else console.log(`Let's try again, ${userName}!`);
+  } else console.log(`Let's try again, ${userName}!`);
 }
 
 function gcdGame() {
@@ -50,9 +49,9 @@ function gcdGame() {
       console.log('Correct!');
       if (findGCD() === true) {
         console.log(`Congratulations, ${userName}!`);
-      }
-    }
-  } console.log(`Let's try again, ${userName}!`);
+      } else console.log(`Let's try again, ${userName}!`);
+    } else console.log(`Let's try again, ${userName}!`);
+  } else console.log(`Let's try again, ${userName}!`);
 }
 
 function primeGame() {
@@ -66,9 +65,9 @@ function primeGame() {
       console.log('Correct!');
       if (isPrime() === true) {
         console.log(`Congratulations, ${userName}!`);
-      }
-    }
-  } console.log(`Let's try again, ${userName}!`);
+      } else console.log(`Let's try again, ${userName}!`);
+    } else console.log(`Let's try again, ${userName}!`);
+  } else console.log(`Let's try again, ${userName}!`);
 }
 
 function progressionGame() {
@@ -82,14 +81,10 @@ function progressionGame() {
       console.log('Correct!');
       if (isProgressionCorrect() === true) {
         console.log(`Congratulations, ${userName}!`);
-      }
-    }
-  } console.log(`Let's try again, ${userName}!`);
+      } else console.log(`Let's try again, ${userName}!`);
+    } else console.log(`Let's try again, ${userName}!`);
+  } else console.log(`Let's try again, ${userName}!`);
 }
-
-// function temp() {
-//   createProgression();
-// }
 
 export {
   evenGame, calcGame, gcdGame, primeGame, progressionGame,

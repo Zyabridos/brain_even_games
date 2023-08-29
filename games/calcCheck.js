@@ -46,6 +46,9 @@ function compareCalculation() {
   if (parseInt(userAnswer) === theRightAnswer) {
     return true;
   }
+  if (parseInt(userAnswer) !== theRightAnswer) {
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${theRightAnswer}'.`);
+  }
 }
 
 export default compareCalculation;

@@ -2,8 +2,8 @@ import readlineSync from 'readline-sync';
 import isEven from '../games/evenCheck.js';
 import compareCalculation from '../games/calcCheck.js';
 import findGCD from '../games/gcdCheck.js';
-// первый и третий ответы проходят тест, но если во втором
-// вопросе ответить неверно, то все равно выводится третий
+import isPrime from '../games/primeCheck.js';
+
 function evenGame() {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
@@ -14,10 +14,11 @@ function evenGame() {
     console.log('Correct!');
     if (isEven() === true) {
       console.log('Correct!');
-    } if (isEven() === true) {
-      console.log(`Congratulations, ${userName}!`);
+      if (isEven() === true) {
+        console.log(`Congratulations, ${userName}!`);
+      }
     }
-  }
+  } console.log(`Let's try again, ${userName}!`);
 }
 
 function calcGame() {
@@ -29,10 +30,11 @@ function calcGame() {
     console.log('Correct!');
     if (compareCalculation() === true) {
       console.log('Correct!');
-    } if (compareCalculation() === true) {
-      console.log(`Congratulations, ${userName}!`);
+      if (compareCalculation() === true) {
+        console.log(`Congratulations, ${userName}!`);
+      }
     }
-  }
+  } console.log(`Let's try again, ${userName}!`);
 }
 
 function gcdGame() {
@@ -44,10 +46,29 @@ function gcdGame() {
     console.log('Correct!');
     if (findGCD() === true) {
       console.log('Correct!');
-    } if (findGCD() === true) {
-      console.log(`Congratulations, ${userName}!`);
+      if (findGCD() === true) {
+        console.log(`Congratulations, ${userName}!`);
+      }
     }
-  }
+  } console.log(`Let's try again, ${userName}!`);
 }
 
-export { evenGame, calcGame, gcdGame };
+function primeGame() {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  if (isPrime() === true) {
+    console.log('Correct!');
+    if (isPrime() === true) {
+      console.log('Correct!');
+      if (isPrime() === true) {
+        console.log(`Congratulations, ${userName}!`);
+      }
+    }
+  } console.log(`Let's try again, ${userName}!`);
+}
+
+export {
+  evenGame, calcGame, gcdGame, primeGame,
+};

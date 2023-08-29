@@ -13,6 +13,9 @@ function findGCD() {
   if (parseInt(userAnswer) === firstRandomNumber) {
     return true;
   }
+  if (userAnswer) !== firstRandomNumber) {
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${firstRandomNumber}'.`)
+  }
 }
 
 export default findGCD;

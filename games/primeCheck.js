@@ -21,12 +21,12 @@ function isPrime() {
     || (randomNumber === notPrimeArray[i] && userAnswer === 'no')) {
       return true;
     }
-    if (primeArray[i] !== randomNumber && userAnswer === 'yes') {
-      console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
-    }
-    if (randomNumber !== notPrimeArray[i] && userAnswer === 'no') {
-      console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
-    }
+    // if (primeArray[i] !== randomNumber && userAnswer === 'yes') {
+    //   console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
+    // }
+    // if (randomNumber !== notPrimeArray[i] && userAnswer === 'no') {
+    //   console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
+    // }
   } console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'aaaa'.`);
 }
 

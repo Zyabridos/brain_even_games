@@ -3,6 +3,7 @@ import isEven from '../games/evenCheck.js';
 import compareCalculation from '../games/calcCheck.js';
 import findGCD from '../games/gcdCheck.js';
 import isPrime from '../games/primeCheck.js';
+import isProgressionCorrect from '../games/progressionCheck.js';
 
 function evenGame() {
   console.log('Welcome to the Brain Games!');
@@ -69,6 +70,22 @@ function primeGame() {
   } console.log(`Let's try again, ${userName}!`);
 }
 
+function progressionGame() {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  if (isProgressionCorrect() === true) {
+    console.log('Correct!');
+    if (isProgressionCorrect() === true) {
+      console.log('Correct!');
+      if (isProgressionCorrect() === true) {
+        console.log(`Congratulations, ${userName}!`);
+      }
+    }
+  } console.log(`Let's try again, ${userName}!`);
+}
+
 export {
-  evenGame, calcGame, gcdGame, primeGame,
+  evenGame, calcGame, gcdGame, primeGame, progressionGame,
 };

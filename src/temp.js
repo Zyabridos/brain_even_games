@@ -18,14 +18,4 @@ function calc() {
     expression = `${firstNumber} * ${secondNumber}`;
     expressionAnswer = firstNumber * secondNumber;
   }
-  console.log(`Question: ${expression}`);
-  // console.log(expressionAnswer);
-  const userAnswer = readlineSync.question('Your answer: ');
-  if (parseInt(userAnswer) === expressionAnswer) {
-    return true;
-  }
-  if (parseInt(userAnswer) !== expressionAnswer) {
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${expressionAnswer}'.`);
-  }
 }
-export default calc;

@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
 import isEven from '../games/evenCheck.js';
-import compareCalculation from '../games/calcCheck.js';
+import calc from '../games/calcCheck.js';
 import findGCD from '../games/gcdCheck.js';
 import isPrime from '../games/primeCheck.js';
 import isProgressionCorrect from '../games/progressionCheck.js';
+import createProgression from './createProgression.js';
 
 function evenGame() {
   console.log('Welcome to the Brain Games!');
@@ -27,11 +28,11 @@ function calcGame() {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('What is the result of the expression?');
-  if (compareCalculation() === true) {
+  if (calc() === true) {
     console.log('Correct!');
-    if (compareCalculation() === true) {
+    if (calc() === true) {
       console.log('Correct!');
-      if (compareCalculation() === true) {
+      if (calc() === true) {
         console.log(`Congratulations, ${userName}!`);
       }
     }
@@ -85,6 +86,10 @@ function progressionGame() {
     }
   } console.log(`Let's try again, ${userName}!`);
 }
+
+// function temp() {
+//   createProgression();
+// }
 
 export {
   evenGame, calcGame, gcdGame, primeGame, progressionGame,

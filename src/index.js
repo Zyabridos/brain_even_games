@@ -74,7 +74,7 @@ function progressionGame() {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  console.log('What number is missing in the progression?');
   if (isProgressionCorrect() === true) {
     console.log('Correct!');
     if (isProgressionCorrect() === true) {

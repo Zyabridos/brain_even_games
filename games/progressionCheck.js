@@ -7,7 +7,7 @@ function isProgressionCorrect() {
   for (let i = 0; i <= 10; i += 1) {
     progressionArray.push(firstRandomNumber + i * stepOfProgression);
   }
-  const indexOfhiddenNumber = Math.floor(Math.random() * 10);
+  const indexOfhiddenNumber = Math.floor(Math.random() * 9) + 1;
   const hiddenNumber = progressionArray[indexOfhiddenNumber];
   progressionArray[indexOfhiddenNumber] = ' .. ';
 

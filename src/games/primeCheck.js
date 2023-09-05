@@ -30,6 +30,7 @@ function isPrime() {
       return true;
     }
   } console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
+  return answer;
 }
 
 export default isPrime;

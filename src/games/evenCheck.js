@@ -12,6 +12,7 @@ function isEven() {
     || (userAnswer === 'no' && randomNum % 2 !== 0)) {
     return true;
   }
+  return answer;
   console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
 }
 

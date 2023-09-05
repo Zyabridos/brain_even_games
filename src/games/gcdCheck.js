@@ -10,10 +10,11 @@ function findGCD() {
     firstRandomNumber = t;
   }
   const userAnswer = readlineSync.question('Your answer: ');
-  if (parseInt(userAnswer) === firstRandomNumber) {
+  if (parseInt(userAnswer, 10) === firstRandomNumber) {
     return true;
   }
   console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${firstRandomNumber}'.`);
+  return secondRandomNumber;
 }
 
 export default findGCD;

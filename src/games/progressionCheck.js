@@ -9,7 +9,7 @@ function generateRandomProgression() {
   }
   const indexOfhiddenNumber = Math.floor(Math.random() * 10);
   const hiddenNumber = progressionArray[indexOfhiddenNumber];
-  progressionArray[indexOfhiddenNumber] = ' .. ';
+  progressionArray[indexOfhiddenNumber] = '..';
 
   console.log(`'Question: ${progressionArray[0]} ${progressionArray[1]} ${progressionArray[2]} ${progressionArray[3]} ${progressionArray[4]} ${progressionArray[5]} ${progressionArray[6]} ${progressionArray[7]} ${progressionArray[8]} ${progressionArray[9]}'`);
   const userAnswer = readlineSync.question('Your answer: ');

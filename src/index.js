@@ -1,11 +1,11 @@
 import readlineSync from 'readline-sync';
-import isEven from '../games/evenCheck.js';
-import calc from '../games/calcCheck.js';
-import findGCD from '../games/gcdCheck.js';
-import isPrime from '../games/primeCheck.js';
-import isProgressionCorrect from '../games/progressionCheck.js';
+import isEven from './games/evenCheck.js';
+import calculateRandomExpression from './games/calcCheck.js';
+import findGCD from './games/gcdCheck.js';
+import isPrime from './games/primeCheck.js';
+import generateRandomProgression from './games/progressionCheck.js';
 
-function evenGame() {
+function runEvenGame() {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -22,23 +22,23 @@ function evenGame() {
   } else console.log(`Let's try again, ${userName}!`);
 }
 
-function calcGame() {
+function runCalcGame() {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('What is the result of the expression?');
-  if (calc() === true) {
+  if (calculateRandomExpression() === true) {
     console.log('Correct!');
-    if (calc() === true) {
+    if (calculateRandomExpression() === true) {
       console.log('Correct!');
-      if (calc() === true) {
+      if (calculateRandomExpression() === true) {
         console.log(`Congratulations, ${userName}!`);
       } else console.log(`Let's try again, ${userName}!`);
     } else console.log(`Let's try again, ${userName}!`);
   } else console.log(`Let's try again, ${userName}!`);
 }
 
-function gcdGame() {
+function runGCDGame() {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -54,7 +54,7 @@ function gcdGame() {
   } else console.log(`Let's try again, ${userName}!`);
 }
 
-function primeGame() {
+function runPrimeGame() {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -70,16 +70,16 @@ function primeGame() {
   } else console.log(`Let's try again, ${userName}!`);
 }
 
-function progressionGame() {
+function runProgressionGame() {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('What number is missing in the progression?');
-  if (isProgressionCorrect() === true) {
+  if (generateRandomProgression() === true) {
     console.log('Correct!');
-    if (isProgressionCorrect() === true) {
+    if (generateRandomProgression() === true) {
       console.log('Correct!');
-      if (isProgressionCorrect() === true) {
+      if (generateRandomProgression() === true) {
         console.log(`Congratulations, ${userName}!`);
       } else console.log(`Let's try again, ${userName}!`);
     } else console.log(`Let's try again, ${userName}!`);
@@ -87,5 +87,5 @@ function progressionGame() {
 }
 
 export {
-  evenGame, calcGame, gcdGame, primeGame, progressionGame,
+  runEvenGame, runGCDGame, runPrimeGame, runProgressionGame, runCalcGame,
 };

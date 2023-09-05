@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-function isProgressionCorrect() {
+function generateRandomProgression() {
   const progressionArray = [];
   const firstRandomNumber = Math.floor(Math.random() * 30);
   const stepOfProgression = Math.floor(Math.random() * 5) + 2;
@@ -18,4 +18,4 @@ function isProgressionCorrect() {
   if (parseInt(userAnswer) !== hiddenNumber && isNaN(userAnswer) === false) console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${hiddenNumber}'.`);
 }
 
-export default isProgressionCorrect;
+export default generateRandomProgression;

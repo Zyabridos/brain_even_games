@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-function calc() {
+function calculateRandomExpression() {
   const randomOperator = Math.floor(Math.random() * 3);
   const firstNumber = (Math.floor(Math.random() * 30) + 1);
   const secondNumber = Math.floor(Math.random() * 20);
@@ -28,4 +28,4 @@ function calc() {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${expressionAnswer}'.`);
   }
 }
-export default calc;
+export default calculateRandomExpression;

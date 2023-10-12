@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
+import getRandomInRange from '../utils.js';
 
 function generateRandomProgression() {
   const progressionArray = [];
-  const firstRandomNumber = Math.floor(Math.random() * 30);
-  const stepOfProgression = Math.floor(Math.random() * 5) + 2;
+  const firstRandomNumber = getRandomInRange();
+  const stepOfProgression = getRandomInRange();
   for (let i = 0; i <= 10; i += 1) {
     progressionArray.push(firstRandomNumber + i * stepOfProgression);
   }

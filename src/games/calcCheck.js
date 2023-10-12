@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
+import getRandomInRange from '../utils.js';
 
 function calculateRandomExpression() {
   const randomOperator = Math.floor(Math.random() * 3);
-  const firstNumber = (Math.floor(Math.random() * 30) + 1);
-  const secondNumber = Math.floor(Math.random() * 20);
+  const firstNumber = getRandomInRange();
+  const secondNumber = getRandomInRange();
   let expression = '';
   let expressionAnswer = 0;
   if (randomOperator === 0) {

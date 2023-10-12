@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
+import getRandomInRange from '../utils.js';
 
 function findGCD() {
-  let firstRandomNumber = Math.floor(Math.random() * 47) + 3;
-  let secondRandomNumber = Math.floor(Math.random() * 51) + 3;
+  let firstRandomNumber = getRandomInRange();
+  let secondRandomNumber = getRandomInRange();
   console.log(`Question: ${firstRandomNumber} ${secondRandomNumber}`);
   while (secondRandomNumber) {
     const t = secondRandomNumber;

@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import getRandomInRange from '../utils.js';
 
 function isPrime() {
   const primeArray = [];
@@ -17,16 +18,15 @@ function isPrime() {
     count = 0;
   }
 
-  const randomNumber = Math.floor(Math.random() * 97) + 2;
   let answer = 'no';
-  console.log(`Question: ${randomNumber}`);
+  console.log(`Question: ${getRandomInRange()}`);
   const userAnswer = readlineSync.question('Your answer: ');
   for (let i = 0; i <= notPrimeArray.length; i += 1) {
-    if (randomNumber === primeArray[i]) {
+    if (getRandomInRange() === primeArray[i]) {
       answer = 'yes';
     }
-    if ((primeArray[i] === randomNumber && userAnswer === 'yes')
-    || (randomNumber === notPrimeArray[i] && userAnswer === 'no')) {
+    if ((primeArray[i] === getRandomInRange() && userAnswer === 'yes')
+    || (getRandomInRange() === notPrimeArray[i] && userAnswer === 'no')) {
       return true;
     }
   } console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);

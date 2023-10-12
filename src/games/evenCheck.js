@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
+import getRandomInRange from '../utils.js';
 
 function isEven() {
-  const randomNum = Math.floor(Math.random() * 100);
+  const randomNum = getRandomInRange();
   let answer = 'no';
-  if (randomNum % 2 === 0) {
+  if (getRandomInRange() % 2 === 0) {
     answer = 'yes';
   }
   console.log(`Question: ${randomNum}`);

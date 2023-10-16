@@ -2,7 +2,7 @@ import { getRandomInRange, generateArrayWithPrimeNumbers } from '../utils.js';
 
 function generatePrimeRound() {
   const primeArray = generateArrayWithPrimeNumbers();
-  const question = getRandomInRange(2, 100);
+  const question = getRandomInRange();
   let answer = 'no';
   for (let i = 0; i <= 100; i += 1) {
     if (question === primeArray[i]) {

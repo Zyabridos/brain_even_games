@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import getRandomInRange from '../utils.js';
+import { getRandomInRange } from '../utils.js';
 
 function calculateRandomExpression() {
   const randomOperator = Math.floor(Math.random() * 3);

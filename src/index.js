@@ -5,7 +5,8 @@ import generatePrimeRound from './games/generatePrimeRound.js';
 import generateProgressionRound from './games/generateProgressionRound.js';
 import generateCalcRound from './games/generateCalcRound.js';
 import {
-  generateEvenRules, generateCalcRules, generateGCDRules, generatePrimeRules, generateProgressionRules,
+  generateEvenRules, generateCalcRules, generateGCDRules, generatePrimeRules,
+  generateProgressionRules,
 } from './generateGamesRules.js';
 
 const roundsCount = 3;

@@ -7,4 +7,3 @@ function makeWelcome() {
 }
 
 export default makeWelcome;
-export const userName = 'userName';

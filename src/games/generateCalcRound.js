@@ -6,17 +6,18 @@ function generateCalcRound() {
   const secondNumber = getRandomInRange();
   let question = '';
   let answer = 0;
-  if (randomOperator === 0) {
-    question = `${firstNumber} + ${secondNumber}`;
-    answer = firstNumber + secondNumber;
-  }
-  if (randomOperator === 1) {
-    question = `${firstNumber} - ${secondNumber}`;
-    answer = firstNumber - secondNumber;
-  }
-  if (randomOperator === 2) {
-    question = `${firstNumber} * ${secondNumber}`;
-    answer = firstNumber * secondNumber;
+  switch (randomOperator) {
+    case randomOperator === 0:
+      question = `${firstNumber} + ${secondNumber}`;
+      answer = firstNumber + secondNumber;
+      break;
+    case randomOperator === 1:
+      question = `${firstNumber} - ${secondNumber}`;
+      answer = firstNumber - secondNumber;
+      break;
+    default:
+      question = `${firstNumber} * ${secondNumber}`;
+      answer = firstNumber * secondNumber;
   }
   return [question, answer];
 }

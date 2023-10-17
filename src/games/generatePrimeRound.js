@@ -1,7 +1,8 @@
-import { getRandomInRange, generateArrayWithPrimeNumbers } from '../utils.js';
+import { getRandomInRange, getPrimeArray } from '../utils.js';
 
 function generatePrimeRound() {
-  const primeArray = generateArrayWithPrimeNumbers();
+  const upperNumberInArray = 100;
+  const primeArray = getPrimeArray(upperNumberInArray);
   const question = getRandomInRange();
   let answer = 'no';
   for (let i = 0; i <= 100; i += 1) {

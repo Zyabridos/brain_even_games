@@ -1,4 +1,6 @@
-export const getRandomInRange = (min = 0, max = 100) => Math.floor(min + Math.random() * (max - min + 1));
+export function getRandomInRange(min = 0, max = 100) {
+  return Math.floor(min + Math.random() * (max - min + 1));
+}
 
 export const isPrime = (num) => {
   for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {

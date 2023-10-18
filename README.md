@@ -28,16 +28,7 @@ asciinema play asciinemas/605450.cast - for example of playing Brain-prime -->
 <video controls autoplay>
  <source src="https://asciinema.org/a/1dNup5l5jsFWU4V4XQIRRkLsv" type = "video/cast">
  </video> -->
- <body>
-    <center>
-        <h3>html video autoplay</h3>
-        <video controls autoplay muted>
-            <source src="https://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
- 
-<p>Sorry, your broswer doesn't support embedded videos.</p>
-        </video>
-    </center>
-</body>
+<script src="https://asciinema.org/a/186686.js" id="asciicast-186686" async></script>
 Brain-gcd: https://asciinema.org/a/lDZCkFm95xoSJsdz5hvpZrNlY
 Brain-progression: https://asciinema.org/a/dHFvhHCTO4Q283Qx4HIrAtb5N
 Brain-prime: https://asciinema.org/a/FvBaYqpt4ghOcqnoRRFR3Ck8R

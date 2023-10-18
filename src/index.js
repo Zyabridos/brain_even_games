@@ -81,11 +81,12 @@ function runProgressionGame() {
   console.log('What number is missing in the progression?');
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, answer] = generateProgressionRound();
+    console.log(answer.toString());
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (answer === parseInt(userAnswer, 10) && i < roundsCount - 1) {
       console.log('Correct!');
-    } else if (answer !== parseInt(userAnswer, 10) || parseInt(userAnswer, 10).isInteger === true) {
+    } else if (answer.toString() !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${userName}!`);
       return;
     }

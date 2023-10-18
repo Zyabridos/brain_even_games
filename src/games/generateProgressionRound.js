@@ -5,7 +5,7 @@ function generateProgressionRound() {
   const firstRandomNumber = getRandomInRange();
   const stepOfProgression = getRandomInRange(1, 10);
   const lengthOfProgression = 10;
-  for (let i = 0; i < lengthOfProgression; i += 1) {
+  for (let i = 0; i <= lengthOfProgression; i += 1) {
     progressionArray.push(firstRandomNumber + i * stepOfProgression);
   }
   const indexOfhiddenNumber = getRandomInRange(1, 10);

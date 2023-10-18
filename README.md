@@ -16,19 +16,10 @@ In order to play a game, player would have to write name of the game a player wa
   4. "Brain Progression" is a game, which shows a player sequence of 10 numbers, where one is missing. Player should determine missing number. In order to play the game, write "brain-progression" in your console. 
   5. "Brain-prime" is a game, purpose of which is to find out if a given number is prime. In order to play the game, write "brain-prime" in your console. 
 ## Demonstraition of games:
-<!-- You can see an example og game playing by typing in your teminal commands, that are listed below.
-asciinema play asciinemas/605445.cast - for example of playing Brain-even
-asciinema play asciinemas/605447.cast - for example of playing Brain-calc
-asciinema play asciinemas/605448.cast - for example of playing Brain-gcd
-asciinema play asciinemas/605449.cast - for example of playing Brain-progression
-asciinema play asciinemas/605450.cast - for example of playing Brain-prime -->
-<p>Brain-even: </p>
+  Алксандр, у меня не получилось вставить видео в файл README, чтобы оно работало. Что не так? И насчет оформления команд не поняла - линт не ругается, на Гите все выделено.
+Below is presented demonstration of the games. You can see examples of each game, by clicking on name of the game you want to be demonstrated.
 <a href="https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W">Brain-even</a>
-<!-- <p>Brain-calculation: </p>
-<video controls autoplay>
- <source src="https://asciinema.org/a/1dNup5l5jsFWU4V4XQIRRkLsv" type = "video/cast">
- </video> -->
-<script src="https://asciinema.org/a/186686.js" id="asciicast-186686" async></script>
-Brain-gcd: https://asciinema.org/a/lDZCkFm95xoSJsdz5hvpZrNlY
-Brain-progression: https://asciinema.org/a/dHFvhHCTO4Q283Qx4HIrAtb5N
-Brain-prime: https://asciinema.org/a/FvBaYqpt4ghOcqnoRRFR3Ck8R
+<a href="https://asciinema.org/a/1dNup5l5jsFWU4V4XQIRRkLsv">Brain-calc</a>
+<a href="https://asciinema.org/a/lDZCkFm95xoSJsdz5hvpZrNlY">Brain-GCD</a>
+<a href="https://asciinema.org/a/dHFvhHCTO4Q283Qx4HIrAtb5N">Brain-progression</a>
+<a href="https://asciinema.org/a/FvBaYqpt4ghOcqnoRRFR3Ck8R">Brain-prime</a>

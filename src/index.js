@@ -85,7 +85,7 @@ function runProgressionGame() {
     const userAnswer = readlineSync.question('Your answer: ');
     if (answer === parseInt(userAnswer, 10) && i < roundsCount - 1) {
       console.log('Correct!');
-    } else if (answer !== parseInt(userAnswer, 10)) {
+    } else if (answer !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${userName}!`);
       return;
     }

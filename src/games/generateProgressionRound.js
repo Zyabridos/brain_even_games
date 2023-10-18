@@ -15,7 +15,6 @@ function generateProgressionRound() {
   for (let i = 0; i < lengthOfProgression; i += 1) {
     question = `${question} ${progressionArray[i]}`;
   }
-
   return [question, answer];
 }
 export default generateProgressionRound;

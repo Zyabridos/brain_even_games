@@ -4,15 +4,13 @@ import generateGCDRound from './games/generateGCDRound.js';
 import generatePrimeRound from './games/generatePrimeRound.js';
 import generateProgressionRound from './games/generateProgressionRound.js';
 import generateCalcRound from './games/generateCalcRound.js';
-import {
-  generateEvenRules, generateCalcRules, generateGCDRules, generatePrimeRules,
-  generateProgressionRules,
-} from './generateGamesRules.js';
+import makeWelcome from './cli.js';
 
 const roundsCount = 3;
 
 function runEvenGame() {
-  generateEvenRules();
+  const userName = makeWelcome();
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, answer] = generateEvenRound();
     console.log(`Question: ${question}`);
@@ -23,12 +21,13 @@ function runEvenGame() {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
       return;
     }
-    // console.log(`Congratulations, ${userName}!`);
   }
+  console.log(`Congratulations, ${userName}!`);
 }
 
 function runCalcGame() {
-  generateCalcRules();
+  const userName = makeWelcome();
+  console.log('What is the result of the expression?');
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, answer] = generateCalcRound();
     console.log(`Question: ${question}`);
@@ -40,11 +39,12 @@ function runCalcGame() {
       return;
     }
   }
-  // console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 }
 
 function runGCDGame() {
-  generateGCDRules();
+  const userName = makeWelcome();
+  console.log('Find the greatest common divisor of given numbers.');
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, answer] = generateGCDRound();
     console.log(`Question: ${question}`);
@@ -56,11 +56,12 @@ function runGCDGame() {
       return;
     }
   }
-  // console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 }
 
 function runPrimeGame() {
-  generatePrimeRules();
+  const userName = makeWelcome();
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, answer] = generatePrimeRound();
     console.log(`Question: ${question}`);
@@ -72,11 +73,12 @@ function runPrimeGame() {
       return;
     }
   }
-  // console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 }
 
 function runProgressionGame() {
-  generateProgressionRules();
+  const userName = makeWelcome();
+  console.log('What number is missing in the progression?');
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, answer] = generateProgressionRound();
     console.log(`Question: ${question}`);
@@ -88,7 +90,7 @@ function runProgressionGame() {
       return;
     }
   }
-  // console.log(`Congratulations, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 }
 
 export {

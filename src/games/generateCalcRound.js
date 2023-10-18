@@ -1,5 +1,5 @@
 import { getRandomInRange } from '../utils.js';
-
+```javascript
 function generateCalcRound() {
   const randomOperator = getRandomInRange(0, 2);
   const firstNumber = getRandomInRange(3, 20);
@@ -21,4 +21,5 @@ function generateCalcRound() {
   }
   return [question, answer];
 }
+  ```
 export default generateCalcRound;

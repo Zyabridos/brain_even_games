@@ -74,6 +74,7 @@ function runPrimeGame() {
     }
   }
   console.log(`Congratulations, ${userName}!`);
+}
 
 // function runProgressionGame() {
 //   const userName = makeWelcome();
@@ -93,5 +94,5 @@ function runPrimeGame() {
 // }
 
 export {
-  runEvenGame, runGCDGame, runPrimeGame, runProgressionGame, runCalcGame,
+  runEvenGame, runGCDGame, runPrimeGame, runCalcGame,
 };

@@ -74,7 +74,6 @@ function runPrimeGame() {
     }
   }
   console.log(`Congratulations, ${userName}!`);
-}
 
 // function runProgressionGame() {
 //   const userName = makeWelcome();

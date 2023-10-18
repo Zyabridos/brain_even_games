@@ -16,9 +16,16 @@ In order to play a game, player would have to write name of the game a player wa
   4. "Brain Progression" is a game, which shows a player sequence of 10 numbers, where one is missing. Player should determine missing number. In order to play the game, write "brain-progression" in your console. 
   5. "Brain-prime" is a game, purpose of which is to find out if a given number is prime. In order to play the game, write "brain-prime" in your console. 
 ## Demonstraition of games:
-You can see an example og game playing by typing in your teminal commands, that are listed below.
+<!-- You can see an example og game playing by typing in your teminal commands, that are listed below.
 asciinema play asciinemas/605445.cast - for example of playing Brain-even
 asciinema play asciinemas/605447.cast - for example of playing Brain-calc
 asciinema play asciinemas/605448.cast - for example of playing Brain-gcd
 asciinema play asciinemas/605449.cast - for example of playing Brain-progression
-asciinema play asciinemas/605450.cast - for example of playing Brain-prime
+asciinema play asciinemas/605450.cast - for example of playing Brain-prime -->
+<p>Brain-even: </p>
+https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W
+<script src="https://asciinema.org/a/14.js" id="asciicast-14" async></script>
+Brain-calculation: https://asciinema.org/a/1dNup5l5jsFWU4V4XQIRRkLsv
+Brain-gcd: https://asciinema.org/a/lDZCkFm95xoSJsdz5hvpZrNlY
+Brain-progression: https://asciinema.org/a/dHFvhHCTO4Q283Qx4HIrAtb5N
+Brain-prime: https://asciinema.org/a/FvBaYqpt4ghOcqnoRRFR3Ck8R

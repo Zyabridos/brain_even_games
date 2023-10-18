@@ -24,8 +24,9 @@ asciinema play asciinemas/605449.cast - for example of playing Brain-progression
 asciinema play asciinemas/605450.cast - for example of playing Brain-prime -->
 <p>Brain-even: </p>
 <a href="https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W">Brain-even</a>
-<!-- <script src="https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W" id="asciicast-14" async data-autoplay="true" data-size="big"></script> -->
-Brain-calculation: https://asciinema.org/a/1dNup5l5jsFWU4V4XQIRRkLsv
+<p>Brain-calculation: </p>
+<video controls autoplay>
+ <source src="https://asciinema.org/a/1dNup5l5jsFWU4V4XQIRRkLsv">
 Brain-gcd: https://asciinema.org/a/lDZCkFm95xoSJsdz5hvpZrNlY
 Brain-progression: https://asciinema.org/a/dHFvhHCTO4Q283Qx4HIrAtb5N
 Brain-prime: https://asciinema.org/a/FvBaYqpt4ghOcqnoRRFR3Ck8R

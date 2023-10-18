@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import generateEvenRound from './games/generateEvenRound.js';
 import generateGCDRound from './games/generateGCDRound.js';
 import generatePrimeRound from './games/generatePrimeRound.js';
-import generateProgressionRound from './games/generateProgressionRound.js';
+// import generateProgressionRound from './games/generateProgressionRound.js';
 import generateCalcRound from './games/generateCalcRound.js';
 import makeWelcome from './cli.js';
 
@@ -76,22 +76,22 @@ function runPrimeGame() {
   console.log(`Congratulations, ${userName}!`);
 }
 
-function runProgressionGame() {
-  const userName = makeWelcome();
-  console.log('What number is missing in the progression?');
-  for (let i = 0; i < roundsCount; i += 1) {
-    const [question, answer] = generateProgressionRound();
-    console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (answer === parseInt(userAnswer, 10) && i < roundsCount - 1) {
-      console.log('Correct!');
-    } else if (answer !== parseInt(userAnswer, 10)) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
-      return;
-    }
-  }
-  console.log(`Congratulations, ${userName}!`);
-}
+// function runProgressionGame() {
+//   const userName = makeWelcome();
+//   console.log('What number is missing in the progression?');
+//   for (let i = 0; i < roundsCount; i += 1) {
+//     const [question, answer] = generateProgressionRound();
+//     console.log(`Question: ${question}`);
+//     const userAnswer = readlineSync.question('Your answer: ');
+//     if (answer === parseInt(userAnswer, 10) && i < roundsCount - 1) {
+//       console.log('Correct!');
+//     } else if (answer !== parseInt(userAnswer, 10)) {
+//       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
+//       return;
+//     }
+//   }
+//   console.log(`Congratulations, ${userName}!`);
+// }
 
 export {
   runEvenGame, runGCDGame, runPrimeGame, runProgressionGame, runCalcGame,

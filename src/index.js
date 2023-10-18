@@ -18,7 +18,7 @@ function runEvenGame() {
     if (answer === userAnswer && i < roundsCount - 1) {
       console.log('Correct!');
     } else if (answer !== userAnswer) {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${userName}!`);
       return;
     }
   }

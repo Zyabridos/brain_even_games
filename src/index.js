@@ -12,7 +12,7 @@ const runEngine = (rules, generateRound) => {
     const userAnswer = readlineSync.question('Your answer: ');
     if (answer === userAnswer && i < roundsCount - 1) {
       console.log('Correct!');
-    } else if (answer !== userAnswer) {
+    } else if (answer.toString() !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${userName}!`);
       return;
     }

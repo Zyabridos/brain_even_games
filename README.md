@@ -17,11 +17,13 @@ In order to play a game, player would have to write name of the game a player wa
   5. "Brain-prime" is a game, purpose of which is to find out if a given number is prime. In order to play the game, write "brain-prime" in your console. 
 ## Demonstraition of games:
 Below is presented demonstration of the games. You can see examples of each game, by clicking the video file.
-<!-- [![asciicast](https://asciinema.org/a/QEwY6AepHEjXDE1pXyiqsLA4P.svg)](https://asciinema.org/a/QEwY6AepHEjXDE1pXyiqsLA4P) -->
 ## Brain-even:
 [![asciicast](https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W.svg)](https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W)
-<!-- <a href="https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W">Brain-even</a> -->
-<a href="https://asciinema.org/a/1dNup5l5jsFWU4V4XQIRRkLsv">Brain-calc</a>
-<a href="https://asciinema.org/a/lDZCkFm95xoSJsdz5hvpZrNlY">Brain-GCD</a>
-<a href="https://asciinema.org/a/dHFvhHCTO4Q283Qx4HIrAtb5N">Brain-progression</a>
-<a href="https://asciinema.org/a/FvBaYqpt4ghOcqnoRRFR3Ck8R">Brain-prime</a>
+## Brain-calc
+[![asciicast](https://asciinema.org/a/1dNup5l5jsFWU4V4XQIRRkLsv.svg)](https://asciinema.org/a/1dNup5l5jsFWU4V4XQIRRkLsv)
+## Brain-Greatest Common Divider
+[![asciicast](https://asciinema.org/a/lDZCkFm95xoSJsdz5hvpZrNlY.svg)](https://asciinema.org/a/lDZCkFm95xoSJsdz5hvpZrNlY)
+## Brain-progression
+[![asciicast](https://asciinema.org/a/dHFvhHCTO4Q283Qx4HIrAtb5N.svg)](https://asciinema.org/a/dHFvhHCTO4Q283Qx4HIrAtb5N)
+## Brain-prime
+[![asciicast](https://asciinema.org/a/FvBaYqpt4ghOcqnoRRFR3Ck8R.svg)](https://asciinema.org/a/FvBaYqpt4ghOcqnoRRFR3Ck8R)

@@ -9,7 +9,7 @@ function generateGCDRound() {
     firstRandomNumber = t;
   }
   const question = `${firstRandomNumber} ${secondRandomNumber}`;
-  const answer = firstRandomNumber;
+  const answer = String(firstRandomNumber);
   return [question, answer];
 }
 export default generateGCDRound;

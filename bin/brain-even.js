@@ -1,4 +1,10 @@
 #!/usr/bin/env node
-import { runEvenGame } from '../src/index.js';
+import generateRound from '../src/games/generateEvenRound.js';
+import runEngine from '../src/index.js';
 
-runEvenGame();
+const runGame = () => {
+  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+  runEngine(rules, generateRound);
+};
+
+runGame();

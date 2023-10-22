@@ -16,9 +16,11 @@ In order to play a game, player would have to write name of the game a player wa
   4. "Brain Progression" is a game, which shows a player sequence of 10 numbers, where one is missing. Player should determine missing number. In order to play the game, write "brain-progression" in your console. 
   5. "Brain-prime" is a game, purpose of which is to find out if a given number is prime. In order to play the game, write "brain-prime" in your console. 
 ## Demonstraition of games:
-  Алксандр, у меня не получилось вставить видео в файл README, чтобы оно работало. Что не так? И насчет оформления команд не поняла - линт не ругается, на Гите все выделено.
-Below is presented demonstration of the games. You can see examples of each game, by clicking on name of the game you want to be demonstrated.
-<a href="https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W">Brain-even</a>
+Below is presented demonstration of the games. You can see examples of each game, by clicking the video file.
+<!-- [![asciicast](https://asciinema.org/a/QEwY6AepHEjXDE1pXyiqsLA4P.svg)](https://asciinema.org/a/QEwY6AepHEjXDE1pXyiqsLA4P) -->
+## Brain-even:
+[![asciicast](https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W.svg)](https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W)
+<!-- <a href="https://asciinema.org/a/WdCdiVgZQgvj3rMaoQfEdvq7W">Brain-even</a> -->
 <a href="https://asciinema.org/a/1dNup5l5jsFWU4V4XQIRRkLsv">Brain-calc</a>
 <a href="https://asciinema.org/a/lDZCkFm95xoSJsdz5hvpZrNlY">Brain-GCD</a>
 <a href="https://asciinema.org/a/dHFvhHCTO4Q283Qx4HIrAtb5N">Brain-progression</a>

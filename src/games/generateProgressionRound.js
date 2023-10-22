@@ -9,7 +9,7 @@ function generateProgressionRound() {
     progressionArray.push(firstRandomNumber + i * stepOfProgression);
   }
   const indexOfhiddenNumber = getRandomInRange(1, 10);
-  const answer = progressionArray[indexOfhiddenNumber];
+  const answer = String(progressionArray[indexOfhiddenNumber]);
   progressionArray[indexOfhiddenNumber] = '..';
   let question = '';
   for (let i = 0; i < lengthOfProgression; i += 1) {

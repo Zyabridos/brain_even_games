@@ -1,15 +1,23 @@
-import { getRandomInRange, getPrimeArray } from '../utils.js';
+import { getRandomInRange } from '../utils.js';
+import runEngine from '../index.js';
 
-function generatePrimeRound() {
-  const upperNumberInArray = 100;
-  const primeArray = getPrimeArray(upperNumberInArray);
-  const question = getRandomInRange();
-  let answer = 'no';
-  for (let i = 0; i <= 100; i += 1) {
-    if (question === primeArray[i]) {
-      answer = 'yes';
-    }
+const isPrime = (number) => {
+  if (number < 2) { return false; }
+  for (let i = 2; i <= number / 2; i += 1) {
+    if (number % i === 0) { return false; }
   }
+  return true;
+};
+
+function generateRound() {
+  const question = getRandomInRange(0, 100);
+  const answer = String(isPrime(question) ? 'yes' : 'no');
   return [question, answer];
 }
-export default generatePrimeRound;
+
+const runPrimeGame = () => {
+  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  runEngine(rules, generateRound);
+};
+
+export default runPrimeGame;

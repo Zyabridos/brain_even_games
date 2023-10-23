@@ -1,4 +1,5 @@
 import { getRandomInRange } from '../utils.js';
+import runEngine from '../index.js';
 
 const calculate = (number1, number2, operator) => {
   switch (operator) {
@@ -20,6 +21,9 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const rules = 'What is the result of the expression?';
+const runCalcGame = () => {
+  const rules = 'What is the result of the expression?';
+  runEngine(rules, generateRound);
+};
 
-export { rules, generateRound };
+export default runCalcGame;

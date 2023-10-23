@@ -1,35 +1,17 @@
 import { getRandomInRange } from '../utils.js';
+import runEngine from '../index.js';
+
+const isEven = (num) => num % 2 === 0;
 
 function generateRound() {
   const question = getRandomInRange();
-  let answer = 'no';
-  if (question % 2 === 0) {
-    answer = 'yes';
-  }
+  const answer = String(isEven(question) ? 'yes' : 'no');
   return [question, answer];
 }
-export default generateRound;
 
-// const calculate = (number1, number2, operator) => {
-//   switch (operator) {
-//     case '+': return number1 + number2;
-//     case '-': return number1 - number2;
-//     case '*': return number1 * number2;
-//     default: throw new Error(`Invalid operator - ${operator}`);
-//   }
-// };
+const runEvenGame = () => {
+  const rules = 'What is the result of the expression?';
+  runEngine(rules, generateRound);
+};
 
-// const generateRound = () => {
-//   const number1 = getRandomInRange(1, 100);
-//   const number2 = getRandomInRange(1, 20);
-//   const operatorIndex = getRandomInRange(0, 2);
-//   const operators = ['+', '-', '*'];
-//   const randomOperator = operators[operatorIndex];
-//   const question = `${number1} ${randomOperator} ${number2}`;
-//   const answer = String(calculate(number1, number2, randomOperator));
-//   return [question, answer];
-// };
-
-// const rules = 'What is the result of the expression?';
-
-// export { rules, generateRound };
+export default runEvenGame;

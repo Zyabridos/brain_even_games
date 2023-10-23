@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import runPrimeGame from '../src/games/generatePrimeRound.js';
+import runProgressionGame from '../src/games/generateProgressionRound.js';
 
-runPrimeGame();
+runProgressionGame();

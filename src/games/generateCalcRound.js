@@ -21,9 +21,7 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runCalcGame = () => {
+export default () => {
   const rules = 'What is the result of the expression?';
   runEngine(rules, generateRound);
 };
-
-export default runCalcGame;

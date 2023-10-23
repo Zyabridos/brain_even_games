@@ -15,9 +15,7 @@ function generateRound() {
   return [question, answer];
 }
 
-const runPrimeGame = () => {
+export default () => {
   const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   runEngine(rules, generateRound);
 };
-
-export default runPrimeGame;

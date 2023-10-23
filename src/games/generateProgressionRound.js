@@ -24,9 +24,7 @@ function generateRound() {
   return [question.slice(1), answer];
 }
 
-const runProgressionGame = () => {
+export default () => {
   const rules = 'What number is missing in the progression?';
   runEngine(rules, generateRound);
 };
-
-export default runProgressionGame;

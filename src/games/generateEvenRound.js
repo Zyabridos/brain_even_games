@@ -9,9 +9,7 @@ function generateRound() {
   return [question, answer];
 }
 
-const runEvenGame = () => {
-  const rules = 'What is the result of the expression?';
+export default () => {
+  const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
   runEngine(rules, generateRound);
 };
-
-export default runEvenGame;

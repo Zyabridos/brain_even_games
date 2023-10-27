@@ -7,6 +7,7 @@ This project was created to play simple mathematical games. The package contains
 Minimum system requirements: a computer, produced in this century and a keybord.
 ## Setup
 In order to setup the game, a player should run following commands in the command line:
+ 
 $ git clone https://github.com/Zyabridos/fullstack-javascript-project-44/tree/main
 $ make install
 

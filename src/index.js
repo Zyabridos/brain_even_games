@@ -10,13 +10,9 @@ const runEngine = (rules, generateRound) => {
     const [question, answer] = generateRound();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    // тут проверка раунда нужна затем, чтобы при выиграше трех раундов подряд не показывало
-    // Correct!
-    // Congratulations!
-    // по-другому не получается избавиться от третьего Correct`a
-    if (answer === userAnswer && i < roundsCount - 1) {
+    if (answer === userAnswer) {
       console.log('Correct!');
-    } else if (answer.toString() !== userAnswer) {
+    } else if (answer !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${userName}!`);
       return;
     }

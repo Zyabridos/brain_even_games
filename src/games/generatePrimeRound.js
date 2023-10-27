@@ -9,11 +9,11 @@ const isPrime = (number) => {
   return true;
 };
 
-function generateRound() {
+const generateRound = () => {
   const question = getRandomInRange(0, 100);
-  const answer = String(isPrime(question) ? 'yes' : 'no');
+  const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
-}
+};
 
 export default () => {
   const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';

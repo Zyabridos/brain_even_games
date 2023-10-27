@@ -8,8 +8,7 @@ const generateProgression = (start, step, length) => {
   }
   return progression;
 };
-
-function generateRound() {
+const generateRound = () => {
   const start = getRandomInRange();
   const step = getRandomInRange(0, 10);
   const length = 10;
@@ -17,12 +16,12 @@ function generateRound() {
   const indexOfhiddenNumber = getRandomInRange(0, 9);
   const answer = String(progressionArray[indexOfhiddenNumber]);
   progressionArray[indexOfhiddenNumber] = '..';
-  let question = '';
-  for (let i = 0; i < length; i += 1) {
-    question = `${question} ${progressionArray[i]}`;
-  }
-  return [question.slice(1), answer];
-}
+  const question = progressionArray.join(' ');
+  // for (let i = 0; i < length; i += 1) {
+  //   question = `${question} ${progressionArray[i]}`;
+  // }
+  return [question, answer];
+};
 
 export default () => {
   const rules = 'What number is missing in the progression?';

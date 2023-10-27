@@ -17,9 +17,6 @@ const generateRound = () => {
   const answer = String(progressionArray[indexOfhiddenNumber]);
   progressionArray[indexOfhiddenNumber] = '..';
   const question = progressionArray.join(' ');
-  // for (let i = 0; i < length; i += 1) {
-  //   question = `${question} ${progressionArray[i]}`;
-  // }
   return [question, answer];
 };
 
